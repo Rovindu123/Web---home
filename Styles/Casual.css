@@ -1,0 +1,129 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #F3A9FF;
+    color: white;
+}
+
+.h1{
+    margin-left: 10%;
+    color: violet;
+}
+
+/* Product container */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Individual product */
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F0FF;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image */
+.product img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.product img:hover{
+    width: 600px;
+    height: 400px;
+}
+
+/* Product details */
+.product-details {
+    flex-grow: 2;
+    margin-left: 20px;
+}
+
+/* Sizes dropdown */
+.sizes select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px; /* Added space between size and quantity */
+}
+
+/* Quantity input */
+.quantity input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px; /* Added space between quantity and Add to Cart */
+}
+
+/* Add to cart button */
+.add-to-cart {
+    background-color: #F3A9FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #D782F5;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 30px;  /* Increased padding for more space */
+    margin-top: 40px;  /* Added margin to push the footer down */
+    background-color: #F3A9FF;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+/* Cart table styling */
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #F3A9FF;
+    color: white;
+}

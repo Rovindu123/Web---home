@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Ensure header, form, and footer are laid out vertically */
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+}
+
+/* Registration Container */
+.registration-container {
+    background-color: #F3F0FF;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto; /* Add margin to create space above and below */
+    transition: transform 0.3s ease;
+}
+
+.registration-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Header */
+.registration-form h2 {
+    color: violet;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input and Textarea Styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* Focused Input Styling */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: violet;
+    outline: none;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* Radio Button Group */
+.form-group input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Submit Button */
+.btn {
+    background-color: violet;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #800080;
+    box-shadow: 0 6px 10px rgba(128, 0, 128, 0.4);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: violet;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* This ensures the footer sticks to the bottom of the page */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .registration-container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .registration-form h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,94 @@
+#sections{
+    background-color: violet;
+    height: 30px;
+    align-items: safe;
+    color: white;
+    margin-left: 20px;
+}
+
+#sections a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 150px;
+}
+
+#sections a:hover{
+    text-decoration: underline;
+}
+
+.subsec{
+    padding-left: 15%;
+}
+
+.image {
+    align-self: left;
+}
+
+/* Subsections */
+.sub-section {
+    display: flex;
+    justify-content: space-between; /* Keep a decent space between the items */
+    align-items: left;
+    padding: 50px 20px;
+    background-color: white;
+    flex-wrap: wrap; /* Allows items to stack if screen size is smaller */
+}
+
+.sub-item {
+    flex-basis: 45%; /* Adjusts the width of each item */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 30px; /* Adds space between items */
+    padding: 10px;
+    background-color: #F3F0FF; /* Light violet background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+.sub-item img {
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.sub-item h3 {
+    color: violet;
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 10px;
+}
+
+.sub-item p {
+    color: #333;
+    font-size: 1rem; /* Adjust the paragraph font size */
+}
+
+/* Extra Content */
+.extra-content {
+    padding: 20px 30px;
+    background-color: #F3F0FF;
+}
+
+.extra-content h3 {
+    color: violet;
+}
+
+.extra-content ul, .extra-content ol {
+    margin-left: 30px;
+}
+
+.extra-content ul li, .extra-content ol li {
+    margin: 10px 0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sub-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-item {
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+}
